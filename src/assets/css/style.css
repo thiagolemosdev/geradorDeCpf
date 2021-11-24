@@ -1,0 +1,72 @@
+:root {
+  --primary-color: rgb(56, 105, 157);
+  --primary-color-darker: rgb(17, 51, 108);
+  --second-color: rgb(189, 158, 34);
+  --second-color-darker: rgb(238, 211, 89);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: var(--primary-color-darker);
+}
+
+section.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 10px;
+  background: var(--second-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.container h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--primary-color);
+  /* margin-bottom: -20px; */
+}
+
+section.container p.contador {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 20px;
+}
+
+section.container div button {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 15px 0;
+  background-color: var(--primary-color-darker);
+  color: var(--second-color-darker);
+  transition: 0.5s;
+}
+
+section.container div button:hover {
+  background-color: var(--primary-color);
+}
